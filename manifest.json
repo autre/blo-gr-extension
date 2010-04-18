@@ -1,7 +1,7 @@
 {
-  "name": "blo.gr shortener",
-  "version": "0.1",
-  "description": "blo.gr URL shortener",
+  "name": "blo.gr url shortener",
+  "version": "0.2",
+  "description": "Yet another URL shortener",
   "browser_action": {
     "default_icon": "favicon.png",
     "default_title": "blo.gr URL shortener",
