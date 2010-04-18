@@ -14,13 +14,14 @@ chrome.tabs.getSelected(null, function(tab) {
             form.setAttribute('value', 'parsing b0rked')
         }
 
-        form.focus().select();
+        form.focus();
     };
     var req = new XMLHttpRequest();
+    var url = encodeURIComponent(tab.url);
 
     req.open(
         'GET',
-        'http://blo.gr/index.php?format=simple&action=shorturl&url=' + tab.url,
+        'http://blo.gr/index.php?format=simple&action=shorturl&url=' + url,
         true);
     req.onload = showShortened;
     req.send(null);
